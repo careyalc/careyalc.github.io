@@ -22,7 +22,8 @@ form{
 
 
 /* Style the list items*/
-form ol li {
+form label {
+	width: 100%;
 	background: white;
 	background: rgba(255,255,255,.3);
 	border-color: black;
