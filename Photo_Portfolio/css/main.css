@@ -6,6 +6,11 @@ html, body, header, footer{
     padding: 0;
 }
 
+html{
+	height: 100%;
+	width: 100%;
+}
+
 /*-----HEADER & NAVIGATION-----*/
 header {
 	background-color: #444444;
@@ -58,15 +63,54 @@ nav a{
 
 
 /*-----BODY-----*/
-.main-content{
+.homepage{
 	margin: 5%;
 }
 
-.main-content img{
-	border-color: black;
-	border-width: 5px;
+.main-content{
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	flex-wrap: wrap;
+	position: relative;
+	justify-content: space-between;
 }
 
+.block1{
+	width: 100%;
+	padding: 2%;
+}
+
+.block2{
+	width: 100%;
+	padding: 2%;
+}
+
+.block3, .block4{
+	width: 100%;
+	padding: 2%;
+	position: relative;
+}
+
+.main-content img{
+	width: 100%;
+}
+
+@media screen and (min-width: 480px){
+	.block1{
+		width: 52%;
+		padding: 2%;
+	}
+
+	.block2{
+		width: 36%;
+		padding: 2%;
+	}
+
+	.block3, .block4{
+	top: -45px;
+	}
+}
 
 /*-----FORM-----*/
 
