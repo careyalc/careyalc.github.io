@@ -1,0 +1,78 @@
+html, body, header, footer{
+    background-color: #efefef;
+    font-family: Garamond;
+    color: #262626;
+    margin: 0;
+    padding: 0;
+}
+
+/*-----HEADER & NAVIGATION-----*/
+header {
+	background-color: #444444;
+	color: white; 
+}
+
+.logo {
+	text-align: right;
+	padding: 2em 4em;
+}
+
+nav li {
+	list-style-type: none;
+	display: inline;
+	padding: 10px 25px 10px 45px;
+	margin: 0;
+	font-size: 1.5em;
+}
+
+nav a{
+	color: white;
+	text-decoration: none;
+}
+
+.current-page{
+	color: #efefef
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.top-nav ul li a.current-page:before {
+  padding-right: 4px;
+  position: relative;
+  top: 1px;
+}
+.top-nav ul li a:hover, a:hover, .top-nav ul li a:focus, a:focus{
+    color: #DDDDDA;
+    font-weight: bold;
+}
+.top-nav ul li a:hover:before, .top-nav ul li a:focus:before{
+  	color: #DDDDDA;
+  	padding-right: 4px;
+  	position: relative;
+  	top: 1px;
+}
+/*implement menu toogle*/
+.top-nav.toggle-open ul{
+	display: block;
+}
+
+
+/*-----BODY-----*/
+.main-content{
+	margin: 5%;
+}
+
+.main-content img{
+	border-color: black;
+	border-width: 5px;
+}
+
+
+/*-----FORM-----*/
+
+form {
+	width: 100%;
+
+}
+
+
