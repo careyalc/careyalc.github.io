@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Carey Ahn Photography Products</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="dist/css/lightbox.min.css">
   </head>
 
 
@@ -17,41 +18,41 @@
 			</div>
 	       	<ul>
 	            <li><a href="index.html">About</a></li>
-	            <li><a class="current-page" href="#">Portfolio</a></li>
+	            <li><a class="current-page" href="portfolio.html">Portfolio</a></li>
 	            <li><a href="blog.html">Blog</a></li>
 	            <li><a href="contact.html">Contact</a></li>
 	        </ul>   
    		</nav>
 	</header>
+	<section class="subheadings">
+		<ul>
+			<li><a href="weddings.html">Weddings</a></li>
+	        <li><a href="engagements.html">Engagements</a></li>
+	        <li><a href="families.html">Families</a></li>
+	        <li><a href="seniors.html">Seniors</a></li>
+	        <li><a class="current-sub-page" href="products.html">Products</a></li>
+	    </ul>
+	</section>
 	<div class ="product-grid">
 		<!--Photo Gallery-->
 		<section class="around-images">
 			<h1>Products</h1>
 			<div class="photo-grid">
-				<div class="photo-cell item1">
-					<img class="resp-img" src="images/Products/bowtie.jpg" alt="Bowtie on a man">
-				</div>
-				<div class="photo-cell item2">
-					<img class="resp-img" src="images/Products/nick.jpg" alt="Man wearing a bowtie">
-				</div>
-				<div class="photo-cell item3">
-					<img class="resp-img" src="images/Products/bbdana.jpg" alt="Girl holding a snack">
-				</div>
-				<div class="photo-cell item4">
-					<img class="resp-img" src="images/Products/bb.jpg" alt="Girl eating a snack">
-				</div>
-				<div class="photo-cell item7">
-					<img class="resp-img" src="images/Products/col.jpg" alt="Cologne on a table">
-				</div>
-				<div class="photo-cell item5">
-					<img class="resp-img" src="images/Products/visor.jpg" alt="Girl wearing a visor"
-				</div>
-				<div class="photo-cell item6">
-					<img class="resp-img" src="images/Products/tshirt.jpg" alt="Girl downtown">
-				</div>
-				<div class="photo-cell item7">
-					<img class="resp-img" src="images/Products/hat.jpg" alt="Girl wearing a winter hat">
-				</div>
+
+				<a class="photo-cell item1" href="images/Products/bowtie.jpg" data-lightbox="example-set"><img class="photo-cell item1" src="images/Products/bowtie.jpg" alt="Bowtie on a man"/></a>
+
+				<a class="photo-cell item2" href="images/Products/nick.jpg" data-lightbox="example-set"><img class="photo-cell item2" src="images/Products/nick.jpg" alt="Mean wearing a bowtie"/></a>
+
+				<a class="photo-cell item3-2" href="images/Products/bbdana.jpg" data-lightbox="example-set"><img class="photo-cell item3-2" src="images/Products/bbdana.jpg" alt="Girl holding a snack"/></a>
+
+				<a class="photo-cell item4-2" href="images/Products/true.jpg" data-lightbox="example-set"><img class="photo-cell item4-2" src="images/Products/true.jpg" alt="Man holding cologne"/></a>
+
+				<a class="photo-cell item5-2" href="images/Products/woodhat.jpg" data-lightbox="example-set"><img class="photo-cell item5-2" src="images/Products/woodhat.jpg" alt="Girl wearing a hat in the woods"/></a>
+
+				<a class="photo-cell item6" href="images/Products/hat.jpg" data-lightbox="example-set"><img class="photo-cell item6" src="images/Products/hat.jpg" alt="Girl wearing a hat"/></a>
+
+				<a class="photo-cell item7" href="images/Products/tshirt.jpg" data-lightbox="example-set"><img class="photo-cell item7" src="images/Products/tshirt.jpg" alt="Girl downtown"/></a>
+
 			</div>
 		</section>
 	</div>
@@ -68,6 +69,8 @@
        	<br>
        	<p>Carey Ahn Photography &copy; 2018</p>
 	</footer>
+
+<script src="dist/js/lightbox-plus-jquery.min.js"></script>
 
 </body>
 
