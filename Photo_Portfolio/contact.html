@@ -7,15 +7,36 @@
     <link rel="stylesheet" href="css/main.css">
     <link href="css/css_forms/bootstrap-formhelpers.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/favicon.png">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
   </head>
 
 
 <body>
 
 	<header>
+		<nav id="top-nav-mobile" class="top-nav-mobile">
+			<div class="logo">
+				<a href="index.html"><img src="images/small_logo.PNG" alt="Carey Ahn Logo"></a>
+			</div>
+
+			<div id="hamburger" class="hamburger">
+				<i class="fas fa-bars"></i>
+			</div>
+			<div id="menu-items" class="menu-items" style="display:none;">
+				<div id="x"><i class="fas fa-times"></i></div>
+		       	<ul>
+		            <li><a href="index.html">About</a></li>
+		            <li><a href="portfolio.html">Portfolio</a></li>
+		            <li><a href="blog.html">Blog</a></li>
+		            <li><a class="current-page" href="contact.html">Contact</a></li>
+		        </ul>
+		    </div>   
+   		</nav>
+
+
 		<nav id = "top-nav" class="top-nav">
 			<div class="logo">
-			<a href="index.html"><img src="images/small_logo.PNG" alt="Carey Ahn Logo" height = 100></a>
+				<a href="index.html"><img src="images/small_logo.PNG" alt="Carey Ahn Logo" height = 100></a>
 			</div>
 	       	<ul>
 	            <li><a href="index.html">About</a></li>
@@ -116,6 +137,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="css/js_forms/bootstrap.min.js"></script>
     <script src="css/js_forms/bootstrap-formhelpers.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+		// $(document).ready(function(){
+			$("#hamburger").click(function() {
+				$("#menu-items").toggle();
+		});
+	</script>
+	<script>
+		// $(document).ready(function(){
+			$("#x").click(function() {
+				$("#menu-items").toggle();
+		});
+	</script>
 
 </body>
 

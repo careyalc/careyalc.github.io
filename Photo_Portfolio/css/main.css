@@ -28,23 +28,31 @@ footer{
 	font-size: 50px;
 }
 
+p{
+	font-size: 1.2em;
+}
+
+/*.homepage{
+	z-index: 0;
+}*/
+
 /*-----HEADER & NAVIGATION-----*/
 header {
 	background-color: #3f3f3f;
 	color: white; 
 }
 
-.logo {
-	text-align: right;
-	padding: 2em 4em;
+.logo{
+	/*text-align: right;*/
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0.5em;
+	height: 60px;
 }
 
-li {
-	list-style-type: none;
-	display: inline;
-	padding: 10px 25px 10px 45px;
-	margin: 0;
-	font-size: 1.5em;
+.logo img{
+	height: 100%;
 }
 
 nav a{
@@ -58,38 +66,126 @@ nav a{
 	font-weight: bold;
 }
 
-.top-nav, .subheadings{
-	display: flex;
-    align-items: center;
-    flex-flow: row-reverse;
-    justify-content: center;
+.top-nav{
+	display: none;
 }
 
-.top-nav ul li a.current-page:before {
-  padding-right: 4px;
-  position: relative;
-  top: 1px;
-}
-.top-nav ul li a:hover, .top-nav ul li a:focus{
-    color: white;
-    /*font-weight: bold;*/
-    /*text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black;*/
-}
-.top-nav ul li a:hover:before, .top-nav ul li a:focus:before{
-  	color: white;
-  	padding-right: 4px;
-  	position: relative;
-  	top: 1px;
+.top-nav-mobile{
+	height: 80px;
+	width: 100%;
 }
 
-.top-nav ul li a{
-	letter-spacing: 0.05px;
+.hamburger{
+	text-align: left;
+	font-size: 30px;
+	position: absolute;
+	top: 0;
+	padding: 0.8em;
 }
 
-/*implement menu toogle*/
-.top-nav.toggle-open ul{
+.menu-items{
+	background-color: #3f3f3f;
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+}
+
+.menu-items ul li{
+	height: 100%;
+	text-align: center;
+	vertical-align: center;
 	display: block;
+	padding: 1% 0;
+	font-size: 2.5em;
 }
+
+.menu-items ul{
+	padding: 0;
+	margin: 170px 0;
+}
+
+#x{
+	padding: 1em;
+	font-size: 30px;
+	z-index: 2;
+}
+/*.menu-items{
+	display: none;
+}
+*/
+/*-----"BIG"NAVIGATION-----*/
+@media screen and (max-width: 1024px){
+	.top-nav ul li{
+		padding: 10px 15px;
+	}
+}
+
+
+/*-----"BIG"NAVIGATION-----*/
+@media screen and (min-width: 768px){
+	li {
+		list-style-type: none;
+		display: inline;
+		padding: 10px 35px 10px 35px;
+		margin: 0;
+		font-size: 1.6em;
+	}
+
+	.top-nav-mobile{
+		display: none;
+	}
+
+	.top-nav{
+		display: flex;
+		height: 150px;
+		padding: 10px 0 10px 0;
+	}
+
+	.logo{
+		position: static;
+		height: 100px;
+		padding: 2em;
+		display: inline;
+	}
+
+	/*.top-nav, .logo{
+		margin: 0 50px;
+	}*/
+
+	.top-nav, .subheadings{
+		display: flex;
+	    align-items: center;
+	    flex-flow: row-reverse;
+	    justify-content: center;
+	}
+
+	.top-nav ul li a.current-page:before {
+	  padding-right: 4px;
+	  position: relative;
+	  top: 1px;
+	}
+	.top-nav ul li a:hover, .top-nav ul li a:focus{
+	    color: white;
+	    /*font-weight: bold;*/
+	    /*text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black;*/
+	}
+	.top-nav ul li a:hover:before, .top-nav ul li a:focus:before{
+	  	color: white;
+	  	padding-right: 4px;
+	  	position: relative;
+	  	top: 1px;
+	}
+
+	.top-nav ul li a{
+		letter-spacing: 0.05px;
+	}
+
+	/*implement menu toogle*/
+	/*.top-nav.toggle-open ul{
+		display: block;*/
+}
+
 
 /*-----SUBHEADER-----*/
 .subheadings li{
