@@ -4,13 +4,26 @@
 	<meta charset="UTF-8">
 	<title>Final Exam</title>
 	<link rel="stylesheet" href="css/main.css">
+    <script>
+	function hideImage() {
+    document.getElementById("hide_image").style.display = "none";
+    // document.getElementById("other_image").style.align-content = "center";
+	}
+	</script>
+	<script>
+	function showImage() {
+    document.getElementById("hide_image").style.display = "inline-block";
+	}
+	</script>
 </head>
-<body>
+<body style="background-image:url(images/sun-pattern.png)">
 	<h1>Alexandra Carey</h1>
-	<img src="images/examPic.JPG" alt="Photo of Colleen and Family">
-	<img src="images/UMSI-logo.jpg" alt="University of Michigan School of Information Logo">
+	<div class="images">
+		<img id="hide_image" src="images/examPic.JPG" alt="Photo of Colleen and Family">
+		<img id="other_image" src="images/UMSI-logo.jpg" alt="University of Michigan School of Information Logo">
+	</div>
 	<br>
-	<input type="submit" value = "Hide Image">
-	<input type="submit" value = "Show Image">
+	<input type="submit" value = "Hide Image" onclick="hideImage()">
+	<input type="submit" value = "Show Image" onclick="showImage()">
 </body>
 </html>
