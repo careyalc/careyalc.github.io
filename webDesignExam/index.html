@@ -8,6 +8,11 @@
 	function hideImage() {
     document.getElementById("hide_image").style.display = "none";
     // document.getElementById("other_image").style.align-content = "center";
+    var x = document.getElementById("hide_button").clicked;
+    if (x == true) {
+        var y = document.getElementById("imagediv") //trying to get the other image to display center when the first button is clicked
+        y.style.textAlign= "center";
+      }
 	}
 	</script>
 	<script>
@@ -18,12 +23,12 @@
 </head>
 <body style="background-image:url(images/sun-pattern.png)">
 	<h1>Alexandra Carey</h1>
-	<div class="images">
+	<div id="imagediv" class="images">
 		<img id="hide_image" src="images/examPic.JPG" alt="Photo of Colleen and Family">
 		<img id="other_image" src="images/UMSI-logo.jpg" alt="University of Michigan School of Information Logo">
 	</div>
 	<br>
-	<input type="submit" value = "Hide Image" onclick="hideImage()">
-	<input type="submit" value = "Show Image" onclick="showImage()">
+	<input id="hide_button" type="submit" value = "Hide Image" onclick="hideImage()">
+	<input id="show_button" type="submit" value = "Show Image" onclick="showImage()">
 </body>
 </html>
