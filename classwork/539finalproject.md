@@ -4,7 +4,7 @@
 
 For my final project, I am evaluating The University of Michigan Museum of Art's website. Below is my evaulation of the site using the Vox Media Accessbility checklist. 
 
-[](checklist.png)
+![](checklist.png)
 
 Though the first four items are checked, I want to make a few notes for some:
 
