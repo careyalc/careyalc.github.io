@@ -22,6 +22,8 @@ To improve the quality assurance of the UMMA's site I recommend 3 key suggestion
 
 2. As mentioned above, the screen reader had a hard time processing the social icons. I recoomend changing the format of the social icons so screen readers can see them and read aloud what they are, rather than having the user tab into the "group" in order to see what the content is. 
 
-3. If possible, fix the "Art" heading so the screen reader actually says "Art" rather than "A-R-T". I would also recommend making the navigation a little less long and consolidate some options, if possible for the overall content of the website. 
+3. If possible, fix the "Art" heading so the screen reader actually says "Art" rather than "A-R-T". I would also recommend making the navigation a little less long and consolidate some options, if possible for the overall content of the website.
+
+4. Finally, I recommend fixing the mobile view on a few pages, such as Support, where the text seems to run "off the page" and beyond the constraints of a mobile screen. Other than that, the site is fairly easy to navigate on a mobile device.
 
 
