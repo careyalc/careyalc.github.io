@@ -400,9 +400,13 @@ a.port-link:hover{
 
 }
 
-/*.googleform{
-	display: block;
+.googleparent{
 	text-align: center;
-}*/
+}
+
+.googleform{
+	display: inline-block;
+	/*text-align: center;*/
+}
 
 
